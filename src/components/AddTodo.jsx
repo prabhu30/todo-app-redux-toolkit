@@ -17,7 +17,7 @@ const AddTodo = () => {
         <form onSubmit={addTodoHandler} className="space-x-3 mt-8">
             <input
                 type="text"
-                className="bg-gray-800 rounded border border-gray-700 text-base outline-none focus:outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-2/5 md:w-80 bg-gray-800 rounded border border-gray-700 text-base outline-none focus:outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 placeholder="Enter a Todo..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}

@@ -8,14 +8,14 @@ const Todos = () => {
 
     return (
         <>
-        <ul className='w-2/5 mt-4'>
+        <ul className='w-4/5 md:w-2/5 max-w-screen-sm:w-4/5 mt-4'>
             {
                 todos.map(todo => (
                     <li
                         className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
                         key={todo.id}
                     >
-                        <div className='text-white w-3/5'>{todo.text}</div>
+                        <div className='text-white text-left w-3/5'>{todo.text}</div>
                         <button
                         onClick={() => dispatch(removeTodo(todo.id))}
                         className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
